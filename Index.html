@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Meu Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="sparkle">Para a minha Pequena 💖</h1>
+    <p class="sparkle">Meu amor, cada momento ao seu lado é especial. Espero que esse presente digital traga um sorriso ao seu rosto. Eu Te amo! 💕</p>
+  
+    <div class="music-player-container">
+        <div class="music-player">
+            <h2 id="music-name">Carregando...</h2>
+            <audio id="audio-player"></audio>
+            <div class="controls">
+                <button id="prev">&#9664;</button>
+                <button id="play-btn">&#9654;</button>
+                <button id="next-btn">&#9654;</button>
+            </div>
+            <input type="range" id="progress-bar" value="0">
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <img class="sparkle" src="https://github.com/user-attachments/assets/6074457d-3475-436c-808a-e5cb5e5df68c" alt="Foto 1">
+            <img class="sparkle" src="https://github.com/user-attachments/assets/c58c9002-4897-4b53-a537-d46e4a1103de" alt="Foto 2">
+            <img class="sparkle" src="https://github.com/user-attachments/assets/2dec9011-a6f1-4da0-b0f9-7811397a3bb4" alt="Foto 3">
+            <img class="sparkle" src="https://github.com/user-attachments/assets/1f9b3066-f9ac-44bc-9d5d-6f0a9b523cd1" alt="Foto 4">
+            <img class="sparkle" src="https://github.com/user-attachments/assets/bb5f684e-6bb0-4871-bef8-2ec9f13e5820" alt="Foto 5">
+            <img class="sparkle" src="https://github.com/user-attachments/assets/c0238480-4212-4032-a724-08f35898fcc7" alt="Foto 6">
+            <img class="sparkle" src="https://github.com/user-attachments/assets/53894a42-5af4-4c87-a86d-c052861c13d7" alt="Foto 7">
+
+        </div>
+       
+    </div>
+
+    <div class="contador">
+        <h4 id="tempo-passado"></h4>
+    </div>
+    
+    <div class="letter-container">
+        <button class="letter-button" onclick="showLetter()">Leia uma carta especial 💌</button>
+        <div class="letter" id="letter"></div>
+    </div>
+
+    <div class="hearts" id="hearts"></div>
+    <div class="petals" id="petals"></div>
+    <br/>
+<br/>
+    <button class="letter-button" onclick="showPopup()">Surpresa 🍕🍣🍔</button>
+<br/>
+<br/>
+    <div class="popup" id="foodPopup">
+        <p>Escolha o que a gente vai comer</p>
+        <img src="https://github.com/user-attachments/assets/130e64fe-0b0b-400c-a383-d897e866dc71" alt="Sushi" onclick="sendMessage('sushi')">
+        <img src="https://github.com/user-attachments/assets/df0e4e85-ecb5-4c00-82d5-b852bbbcf750" alt="Pizza" onclick="sendMessage('pizza')">
+        <img src="https://github.com/user-attachments/assets/5b5b6ab7-a892-4eb9-9134-f7476d414abc" alt="Hambúrguer" onclick="sendMessage('hambúrguer')">
+        <img src="https://github.com/user-attachments/assets/7518c481-9e65-4bf4-a5b8-c8cc533262b0" alt="Yakisoba" onclick="sendMessage('yakisoba')">
+        <br/>
+        <button class="close-btn" onclick="closePopup()">Fechar</button>
+    </div>
+
+
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
